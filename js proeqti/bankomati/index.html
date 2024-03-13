@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <form method ="post">
+        მოგესალმებით, შეიყვანეთ პინკოდი! <input type="text" name="number" id="number" />
+        <input type="button" name="submit" id="submit" onclick="getaction()" value="go"/>
+        <p id="demo"> </p>
+
+        <div id="options12" style="display:none;">
+        <input type='radio' name='radio' onclick='myfunction(this.value)' value='1'/>ბალანსი
+        <input type='radio' name='radio' onclick='myfunction(this.value)' value='2'/>ფულის გატანა
+        <input type='radio' name='radio' onclick='myfunction(this.value)' value='3'/>ფულის შეტანა
+        </div>
+        <p id="demo1",></p>
+
+        <div id="display" style="display:none;">
+        <label>შეიყვანეთ თანხის რაოდენობა</label>
+        <input type="text" name="amount1" id="amount1" value=""/>
+        <input type="submit" name="submit1" value="submit" onclick="getamount()"/>
+        </div>
+
+        <div id="display1" style="display:none;">
+        <label>მიუთითეთ თანხის რაოდენობა<br>
+               მაქსიმალური თანხის შენატანი 20000        
+        </label>
+        <select id="myselect1">
+        <option value="10000">10000</option>
+        <option value ="20000">20000</option>
+        <option value ="50000">50000</option>
+        </select>
+        <input type="submit" name="submit2" value="submit" onclick="getamount1()">
+        </div>
+        </form>
+    </body>
+</html>
